@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rps.css">
+    <title>Home Screen</title>
+</head>
+<body>
+    <header id="header">Shreks header, don't touch!</header>
+    <main id="main">
+        <nav id="navbar">
+            <button onclick="window.location.href='rps.html';" id="playgamebtn">Play Game</button>
+    <button id="getHallofFame">get hall of fame </button>
+        </nav>
+    <h1 id="h1home">Homescreen</h1>
+    <!-- <button onclick="window.location.href='rps.html';" id="playgamebtn">Play Game</button>
+    <button id="getHallofFame">get hall of fame </button> -->
+    
+    <div id="hallOfFameName" style="visibility: hidden;">
+        <h1 id="hofh1">You are quite thee OGRE!</h1>
+        <input type="text" id="hofnameinput" placeholder="    What is your name?">
+        <button id="submit">Submit</button>
+    </div>
+
+    
+
+        <section id="theHall" style="visibility: hidden;">
+            
+        </section>
+    
+    </main>
+
+    <footer id="footer">
+        <div>Shreks footer, don't touch!</div>
+    </footer>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./home.js"></script>
+<!-- <script src="./rps.js"></script> -->
+
+</html>

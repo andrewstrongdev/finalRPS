@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Sciccors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rps.css">
+
+    </head>
+    <body>
+        <div class="container" id="container" style="visibility: visible;">
+
+      
+
+            <section class="battle-ground">
+                <img id="shrek" src="shrek.png">
+                <img id="farquad" src="farquad.png">
+                <img id="f-grass" src="f-pad.png">
+                <img id="s-grass" src="s-pad.png">
+                <div class="health-box" id="farquad-lives">
+                    <p class="name" id="farquad-name">Farquad</p><p class="health" id="farquad-life-counter">3</p>
+                </div>
+                <div class="health-box" id="shrek-lives">
+                    <p class="name" id="shrek-name">Shrek</p><p class="health" id="shrek-life-counter">3</p>
+                </div>
+                <img id="shrek-rock" src="therock.png" style="visibility: hidden;">
+                <img id="farq-rock" src="therock.png" style="visibility: hidden;">
+                <img id="shrek-paper" src="s-plane.png" style="visibility: hidden;">
+                <img id="farq-paper" src="f-plane.png" style="visibility: hidden;">
+                <img id="shrek-scissors" src="thescissors.png" style="visibility: hidden;">
+                <img id="farq-scissors" src="thescissors.png" style="visibility: hidden;">
+
+            </section>
+       
+            <section class="buttons-container">
+                <button id="prompt">WHAT WILL SHREK DO?</button>
+                <button id="rock">ROCK</button>
+                <button id="paper">PAPER</button>
+                <button id="scissors">SCISSORS</button>
+            </section>
+            
+        </div>
+        <div class="container2" id="container2" style="visibility: hidden;">
+            <div class="endscreen" id="shrekWins" style="visibility: hidden;">SHREK WINS</div>
+            <div class="endscreen" id="shrekLoses" style="visibility: hidden;">SHREK LOSES</div>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="rps.js"></script>
+    </body>
+</html>
